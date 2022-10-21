@@ -1,0 +1,71 @@
+.card-info__input {
+    display: flex;
+    height: 100%;
+    /* width: 400px; */
+    max-width: 400px;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 1em;
+    color: hsl(278, 68%, 11%);
+}
+
+.card-info__input input {
+    padding: 0.6em;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.exp-date {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.7em;
+}
+
+/* .exp-date input {
+    width: 50%;
+} */
+
+.exp-date-inputs__container {
+    display: flex;
+    width: 100%;
+    gap: 0.5em;
+}
+
+.exp-date-inputs__container input {
+    width: 50%;
+}
+
+.cvc {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.exp-cvc__container {
+    display: flex;
+    gap: 1em;
+}
+
+.confirm__btn {
+    padding: 1em 2em;
+    border-radius: 7px;
+    border: 1px solid hsl(278, 68%, 11%);
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    width: 100%;
+    font-weight: 700;
+}
+
+.confirm-btn__container {
+    padding-top: 1em;
+    width: 100%;
+}
+
+.red-text {
+    color: red;
+}

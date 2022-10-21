@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import CardInputInfo from "./components/CardInputInfo";
+import CardDetailsFront from "./components/CardDetailsFront";
+import CardDetailsBack from "./components/CardDetailsBack";
+import { useState } from "react";
 
 function App() {
+  const [cardInfo, setCardInfo] = useState({
+    cardNumber: '',
+    name: '',
+    month: '',
+    year: '',
+    cvc: ''
+  });
+
+  const [cardNumber, setCardNumber] = useState()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App page__container">
+      {cardNumber}
+      <div className="left__column">
+        {/* <img src='assets/images/bg-card-front.png'></img> */}
+        <CardDetailsFront cardInfo={cardInfo}></CardDetailsFront>
+        <CardDetailsBack cardInfo={cardInfo}></CardDetailsBack>
+      </div>
+      <div className="right__column">
+        <CardInputInfo
+          cardInfo={cardInfo}
+          onSetCardInfo={setCardInfo}
+          // onSetCardNumber={setCardNumber}
+        ></CardInputInfo>
+      </div>
     </div>
   );
 }

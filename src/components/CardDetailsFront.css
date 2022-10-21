@@ -1,0 +1,38 @@
+.card-details-front__container {
+    padding-right: 3em;
+}
+
+.card-front {
+    background-image: url('../../images/bg-card-front.png');
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2em;
+    color: white;
+}
+
+.card-logo {
+    height: 50%;
+    width: 100%;
+}
+
+.card-number {
+    font-size: 2em;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-bottom {
+    display: flex;
+    /* height: 100%; */
+    height: 25%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}

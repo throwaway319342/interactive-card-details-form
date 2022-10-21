@@ -1,0 +1,13 @@
+.card-back {
+    background-image: url('../../images/bg-card-back.png');
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 3em;
+    color: white;
+    font-weight: 700;
+}
